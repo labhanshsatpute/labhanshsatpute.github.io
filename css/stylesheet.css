@@ -1,0 +1,114 @@
+/* Universal Selector */
+* {
+	font-family: "Open Sans", sans-serif;
+	margin: 0px;
+	padding: 0px;
+	scroll-behavior: smooth;
+}
+
+header.bgheader {
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+hr {
+	height: 3px;
+	border-radius: 1px;
+}
+.button {
+	border-radius: 0px;
+}
+
+/* Navigation Bar */
+nav {
+	z-index: 5;
+}
+a.logo {
+	color: #000;
+}
+.navbar-toggler-button {
+}
+.searchbar-text {
+	outline: none;
+	border-radius: 0px;
+	border-right: none;
+}
+.searchbar-button {
+	border-radius: 0px;
+	border-left: none;
+}
+nav div ul li a {
+	text-decoration-color: #000;
+}
+nav div ul li a:hover {
+	transition: 0.3s ease;
+}
+
+/* Home Section */
+section.home-section {
+	height: auto;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("images/pages/home-bgimg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	z-index: 3;
+}
+.page-title {
+	margin-top: 15%;
+	margin-bottom: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.page-title h1 {
+	font-size: 60px;
+	color: #00dbde;
+}
+.page-title button {
+	color: #fff;
+	border-color: #fff;
+	border-radius: 30px;
+	background-color: rgba(0,0,0,0.5);
+}
+.page-title button:hover {
+	color: #000;
+	background-color: #fff;
+}
+.student-img {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	margin-top: -20%;
+	margin-bottom: -80%;
+	animation-delay: 0.7s;
+	animation-duration: 1s;
+}
+
+/* Article Section */
+section.article-section {
+	height: auto;
+	width: 100%;
+	position: absolute;
+	z-index: 3;
+}
+
+/* Media Queries */
+@media (max-width: 768px)
+{
+	.page-title {
+		margin-top: 25%;
+		margin-bottom: 15%;
+		padding-top: 10%;
+		padding-bottom: 100%;
+	}
+	.student-img {
+		margin-top: 5%;
+		margin-bottom: -50%;
+	}
+}
+
+
+
