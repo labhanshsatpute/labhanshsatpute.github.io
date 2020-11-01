@@ -98,6 +98,9 @@ section.article-section {
 /* Media Queries */
 @media (max-width: 768px)
 {
+	.logo {
+		display: none;
+	}
 	.page-title {
 		margin-top: 25%;
 		padding-top: 10%;
