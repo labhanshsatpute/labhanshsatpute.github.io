@@ -9,7 +9,10 @@ $(document).ready(function(){
 	});
 
 	$("#getstarted").click(function(){
-	    alert($(".home-section").scrollTop());
+	    window.scroll({
+			top: 620,
+			behaviour: 'smooth'
+		});
 	});
 
 });
