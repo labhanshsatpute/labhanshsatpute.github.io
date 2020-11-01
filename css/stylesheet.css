@@ -86,7 +86,7 @@ section.home-section {
 .img1 {
 	margin-top: -5%;
 	animation-delay: 1.5s;
-	animation: bounce 3s infinite;
+	animation: bounce 3s linear infinite;
 }
 
 /* Article Section */

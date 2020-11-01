@@ -51,7 +51,7 @@
 
 </head>
 
-<body onload="loaded()" class="animated fadeIn">
+<body class="animated fadeIn" id="body">
 
 	<div class="preloader bg-white" id="preloader">
 		<div class="container">
@@ -60,7 +60,7 @@
 	</div>
 
 	<!-- Background Header (Start) -->
-	<header class=" bgheader">
+	<header class="bgheader animated zoomIn">
 
 		<!-- Navigation Bar (Start) -->
 		<nav class="navbar navbar-expand-xl bg-white fixed-top navbar-light shadow">
@@ -71,7 +71,7 @@
 			<!-- Search Bar -->
 			<form class="form-group nav-tabs mt-3 mr-auto border-0">
 				<div class="input-group-append">
-					<input type="search" name="search" class="input-group-text bg-transparent searchbar-text text-left" placeholder="Search Blog">
+					<input type="search" name="search" class="input-group-text bg-transparent searchbar-text text-left" placeholder="Search Blog" autocomplete="off">
 					<button class="btn bg-primary searchbar-button text-light" type="button"><img src="css\images\icons\search.svg" class="ml-1"></button>
 				</div>
 			</form>
@@ -127,16 +127,17 @@
 			<div class="container" align="center">
 
 				<!-- Article Section Title -->
-				<div class="container-fluid article-section-title py-5">
+				<div class="container-fluid article-section-title py-5" data-aos="fade-in">
 					<h1>Latest Articles</h1>
 					<hr class="bg-dark w-25">
 				</div>
 
 				<!-- Article Cards (Start) -->
 				<div class="container-fluid row">
-					
+
+					<!-- First Card -->
 					<div class="col-lg-4 col-md-6 col-sm-12 p-3">
-						<article class="card article-card border-0 shadow">
+						<article class="card article-card border-0 shadow" data-aos="zoom-in" data-aos-delay="100">
 							<img src="css\images\article\article1.jpg" class="img-fluid">
 							<div class="card-body">
 								<h3>Article Title</h3>
@@ -146,8 +147,9 @@
 						</article>
 					</div>
 
+					<!-- Second Card -->
 					<div class="col-lg-4 col-md-6 col-sm-12 p-3">
-						<article class="card article-card border-0 shadow">
+						<article class="card article-card border-0 shadow" data-aos="zoom-in" data-aos-delay="200">
 							<img src="css\images\article\article1.jpg" class="img-fluid">
 							<div class="card-body">
 								<h3>Article Title</h3>
@@ -157,8 +159,9 @@
 						</article>
 					</div>
 
+					<!-- Third Card -->
 					<div class="col-lg-4 col-md-6 col-sm-12 p-3">
-						<article class="card article-card border-0 shadow">
+						<article class="card article-card border-0 shadow" data-aos="zoom-in" data-aos-delay="300">
 							<img src="css\images\article\article1.jpg" class="img-fluid">
 							<div class="card-body">
 								<h3>Article Title</h3>
@@ -189,7 +192,7 @@
 
 				<div class="container-xl row">
 					<div class="col-lg-4 col-md-6 col-sm-12 p-3">
-						<div class="card template-card border-light shadow bg-white">
+						<div class="card template-card border-light shadow bg-white" data-aos="fade-up" data-aos-delay="100">
 							<div class="card-body">
 								<h5>Real Estate Website Template</h5>
 							</div>
@@ -202,7 +205,7 @@
 					</div>
 
 					<div class="col-lg-4 col-md-6 col-sm-12 p-3">
-						<div class="card template-card border-0 shadow bg-white">
+						<div class="card template-card border-0 shadow bg-white" data-aos="fade-up" data-aos-delay="200">
 							<div class="card-body">
 								<h5>Restaurant Website Template</h5>
 							</div>
@@ -215,7 +218,7 @@
 					</div>
 
 					<div class="col-lg-4 col-md-6 col-sm-12 p-3">
-						<div class="card template-card border-0 shadow bg-white">
+						<div class="card template-card border-0 shadow bg-white" data-aos="fade-up" data-aos-delay="300">
 							<div class="card-body">
 								<h5>Corporate Website Template</h5>
 							</div>
@@ -241,20 +244,11 @@
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init({
-			offset: 270,
-			duration: 600
+			offset: 300,
+			duration: 700
 		});
 	</script>
 
 </body>
-
-<script>
-	var x = document.getElementById('preloader');
-	function loaded() {
-		x.style.display = 'none';
-		return 0;
-	}
-</script>
-
 
 </html>
