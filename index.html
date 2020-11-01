@@ -50,10 +50,19 @@
 	<title>Labhansh Satpute | Learn about technology and programming</title>
 
 </head>
-<body>
+
+<body onload="loaded()">
+
+	<div class="preloader bg-white" id="preloader">
+		<div class="container d-block d-flex justify-content-center align-items-center">
+			<div class="spinner-border" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+	</div>
 
 	<!-- Background Header (Start) -->
-	<header class="bgheader" onload="loaded()">
+	<header class="bgheader">
 
 		<!-- Navigation Bar (Start) -->
 		<nav class="navbar navbar-expand-xl bg-white fixed-top navbar-light shadow">
@@ -77,10 +86,10 @@
 			<!-- Linked List -->
 			<div class="collapse navbar-collapse" id="collapse-navbar">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item px-2 ml-auto"><a href="#" class="nav-link font-weight-bold active">Home</a></li>
-					<li class="nav-item px-2 ml-auto"><a href="#" class="nav-link font-weight-bold">Blog</a></li>
-					<li class="nav-item px-2 ml-auto"><a href="#" class="nav-link font-weight-bold">Templates</a></li>
-					<li class="nav-item px-2 ml-auto"><a href="#" class="nav-link font-weight-bold">Youtube</a></li>
+					<li class="nav-item px-2 ml-auto"><a href="#" class="nav-link active">Home</a></li>
+					<li class="nav-item px-2 ml-auto"><a href="#" class="nav-link">Blog</a></li>
+					<li class="nav-item px-2 ml-auto"><a href="#" class="nav-link">Templates</a></li>
+					<li class="nav-item px-2 ml-auto"><a href="#" class="nav-link">Youtube</a></li>
 				</ul>
 			</div>
 			
@@ -133,9 +142,6 @@
 								<h3>Article Title</h3>
 								<label class="mb-2">Date : 10th Oct 2020</label><br>
 								<button class="btn bg-white btn-primary text-primary button">Learn more</button>
-								<?php 
-									echo "<h1 class="text-white">Hello</h1>";
-								 ?>
 							</div>
 						</article>
 					</div>
@@ -183,6 +189,14 @@
 	</script>
 
 </body>
+
+<script>
+	var x = document.getElementById('preloader');
+	function loaded() {
+		x.style.display = 'none';
+		return 0;
+	}
+</script>
 
 
 </html>
