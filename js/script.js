@@ -15,9 +15,7 @@ $(document).ready(function(){
 		});
 	});
 
-});
-
-function pageLoaded() {
 	$('#preloader').hide();
-}
+	
+});
 
