@@ -1,0 +1,160 @@
+
+/* Full Page Style (Start) */
+* {
+	font-family: 'Mulish', sans-serif;
+	padding: 0px;
+	scroll-behavior: smooth;
+}
+body {
+	scroll-behavior: smooth;
+}
+header.body {
+	scroll-behavior: smooth;
+}
+input, textarea {
+	outline: none;
+}
+/* Full Page Style (End) */
+
+/* First Section (s1) (Start) */
+section.home {
+	height: 100vh;
+	background-image: linear-gradient(to right,rgba(0,0,0,0.8),rgba(0,0,0,0.1)),url("images/images/bgimg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+div.home-title hr {
+	width: 32%;
+}
+div.title-home {
+	margin-top: 15%;
+	animation-delay: 1s;
+}
+img.logo {
+	height: 60px;
+	width: auto;
+}
+.button {
+	border-radius: 0px;
+}
+/* First Section (s1) (End) */
+
+/* Menu Section (Start) */
+section.menu {
+	height: auto;
+	width: 100%;
+}
+div.menu-title {
+	border-left: 10px solid black;
+}
+img.menu-img {
+	height: 130px;
+	width: auto;
+}
+div.menu-card {
+	background-color: black;
+}
+div.menu-card:hover {
+	cursor: pointer;
+}
+/* Menu Section (End) */
+
+/* Events Section (Start) */
+section.events {
+	height: auto;
+	width: 100%;
+}
+div.events-title {
+	border-left: 10px solid black;
+}
+div.event-card:hover {
+	z-index: 1;
+	justify-content: center;
+	transition: 0.3s ease;
+	transform: scale(1.15);
+}
+/* Events Section (End) */
+
+/* Book-Action Section (Start) */
+section.book-action {
+	height: auto;
+	width: 100%;
+	background-color: black;
+}
+div.reservation-title {
+	border-left: 10px solid #ffc107;
+}
+.book-text {
+	border-radius: 0px;
+	background-color: black;
+}
+/* Book-Action Section (End) */
+
+/* Gallary Section (Start) */
+section.gallery {
+	height: auto;
+	width: 100%;
+}
+div.gallery-title {
+	border-left: 10px solid black;
+}
+img.gallery-img:hover {
+	cursor: pointer;
+}
+/* Gallary Section (End) */
+
+
+/* Chefs Section (Start) */
+section.chefs {
+	height: auto;
+	width: 100%;
+}
+div.chefs-card-2 {
+	transform: scale(1.2);
+}
+div.chefs-title {
+	border-left: 10px solid black;
+}
+img.chefs-img {
+	height: 200px;
+	width: auto;
+	border-radius: 50%;
+}
+/* Chefs Section (End) */
+
+/* About Section (Start) */
+section.about {
+	height: 100%;
+	width: auto;
+}
+div.about-title {
+	border-left: 10px solid black;
+}
+img.about-logo {
+	height: 400px;
+	width: auto;
+}
+img.social-media {
+	height: 50px;
+	width: auto;
+}
+/* About Section (End) /*
+
+/* Footer (Start) */
+footer {
+	background-color: black;
+}
+/* Footer (End) */
+
+/* Media Query */
+@media (max-width: 768px)
+{
+	section.home {
+		height: auto;
+	}
+	div.home-title hr {
+	width: 100%;
+}
+}

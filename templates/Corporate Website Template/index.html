@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.85">
+
+	<!-- Fav Icon -->
+	<link rel="icon" href="https://img.icons8.com/office/30/000000/logo.png" type="image/x-icon"/>
+
+	<!-- Bootstrap CDN (Start) -->
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<!-- Bootstrap CDN (End) -->
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+	<!-- Jquery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- WayPoints CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+
+	<!-- CounterUp CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
+
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+	<!-- Bootstrap Offline -->
+	<link rel="stylesheet" type="text/css" href="bootstrap\css\bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap\js\bootstrap.min.js">
+	</script>
+
+	<!-- Google Fonts CDN -->
+	<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<!-- Cascade Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css\stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css\animate.css">
+
+	<!-- Title of Web Page -->
+	<title>Corporate Website</title>
+
+</head>
+<body>
+
+	<!-- Background Header (Start) -->
+	<header class="bgheader">
+
+		<!-- Contact Form (Start) -->
+		<div class="contact-form-container" id="contact-form-container" align="center">
+			<div class="container contact-form-div">
+				<form class="contact-form form-group shadow card" onsubmit="return validateForm()" id="contact-form">
+					<div class="card-body p-0">
+						<button class="btn float-right" type="button" id="contact-form-close">x</button>
+					</div>
+					<div class="card-body">
+						<h2>Send us Message</h2>
+						<hr class="hr-row w-50">
+					</div>
+					<div class="card-body">
+						<label class="text-dark font-weight-bold mb-3">Fill the form to send us message</label>
+						<br>
+						<div class="input-group-prepend">
+							<span class="input-group-text text-input font-weight-bold"><img src="css\images\icons\person.svg"></span>
+							<input type="text" name="name" class="input-group-text w-100 text-input text-left" placeholder="Enter your name">
+						</div>
+						<br>
+						<div class="input-group-prepend">
+							<span class="input-group-text text-input font-weight-bold"><img src="css\images\icons\at.svg"></span>
+							<input type="email" name="email" class="input-group-text w-100 text-input text-left" placeholder="Enter your email">
+						</div>
+											<br>
+						<div class="input-group-prepend">
+							<span class="input-group-text text-input font-weight-bold"><img src="css\images\icons\phone.svg"></span>
+							<input type="phone" name="phone" class="input-group-text w-100 text-input text-left" placeholder="Enter your phone">
+						</div>
+						<br>
+						<div class="input-group-prepend">
+							<span class="input-group-text text-input font-weight-bold"><img src="css\images\icons\message.svg"></span>
+							<textarea placeholder="Enter Message" class="input-group-text w-100 text-input text-left" rows="3"></textarea>
+						</div>
+						<br>
+						<div class="container">
+							<div class="form-check-inline">
+								<input type="checkbox" name="check" class="custom-checkbox mb-2"> 
+								<label class="font-weight-bold text-dark ml-1">I accept terms</label><a href="#" class="nav-link mb-2">View</a>
+							</div>
+							<button class="btn btn-lg shadow font-weight-bold submit-button shadow float-right" type="submit">Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+		<!-- Contact Form (End) -->
+		
+		<!-- Navigation Bar (Start) -->
+		<nav class="navbar navbar-expand-xl fixed-top navbar-dark shadow px-lg-5 px-md-4 px-sm-3">
+
+			<a href="index.html" class="navbar-brand px-lg-5 px-md-3 px-sm-1 mt-2">
+				<p class="logo-l1 d-inline-block">Example</p>
+				<p class="logo-l2 d-inline-block">Organization</p>
+			</a>
+
+			<button class="navbar-toggler navbar-toggler-button" type="button">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="collapse-navbar">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item px-2"><a href="#home-section" class="nav-link text-white">Home</a></li>
+					<li class="nav-item px-2"><a href="#services-section" class="nav-link text-white">Services</a></li>
+					<li class="nav-item px-2"><a href="#portfolio-section" class="nav-link text-white">Portfolio</a></li>
+					<li class="nav-item px-2"><a href="#product-section" class="nav-link text-white">Products</a></li>
+					<li class="nav-item px-2"><a href="#contact-section" class="nav-link text-white">Contact us</a></li>
+					<li class="nav-item px-2"><a href="#about-section" class="nav-link text-white">About</a></li>
+				</ul>
+			</div>
+			
+		</nav>
+		<!-- Navigation Bar (End) -->
+
+		<!-- Home Section (Start) -->
+		<section class="home-section" id="home-section">
+			<br>
+			<div class="container" align="center">
+
+				<!-- Home Section Title (Start) -->
+				<div class="home-section-title container">
+					<br>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="container text-lg-left text-md-left text-sm-center">
+								<br>
+								<h2 class="text-light animated fadeInUp">Welcome to</h2>
+								<h1 class="home-title-t1 display-3 animated fadeInUp">Example</h1> 
+								<h1 class="home-title-t2 display-4 animated fadeInUp">Organization</h1>
+								<h3 class="text-white animated fadeInUp">Building the Future of World</h3>
+								<br>
+								<p class="text-light animated fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit,<br>sed do eiusmod
+								tempor incididunt ut labore et dolore.</p>
+								<br>
+								<a class="btn btn-lg home-button-b1 font-weight-bold animated fadeInUp my-2 mx-1" onclick="scrollDown()">Get Started</a>
+								<a href="#" class="btn btn-lg home-button-b2 font-weight-bold animated fadeInUp my-2 mx-1" id="contact-button">Contact Now</a>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<!-- Home Section Title (Start) -->
+	
+			</div>
+			<br>
+		</section>
+		<!-- Home Section (End) -->
+
+		<!-- Fearues Section (Start) --> 
+		<section class="feature-section bg-warning" id="feature-section">
+			<br>
+			<div class="container feature-section-container" align="center">
+				<br>
+				<div class="container feature-section-title" data-aos="fade-up">
+					<h1>Awesome Feature</h1>
+					<hr class="hr-row w-25">
+				</div>
+				<br>
+				<div class="row">
+					<br>
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<div class="container" data-aos="fade-up-right">
+							<div class="feature-img p-5 shadow">
+								<img src="css\images\services\icon1.svg" class="img-fluid">
+							</div>
+							<br>
+							<h3>Performance</h3>
+							<hr class="hr-row w-50">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<div class="container" data-aos="fade-up">
+							<div class="feature-img p-5 shadow">
+								<img src="css\images\services\icon2.svg" class="img-fluid">
+							</div>
+							<br>
+							<h3>Responsivity</h3>
+							<hr class="hr-row w-50">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<div class="container" data-aos="fade-up-left">
+							<div class="feature-img p-5 shadow">
+								<img src="css\images\services\icon3.svg" class="img-fluid">
+							</div>
+							<br>
+							<h3>User-Friendly</h3>
+							<hr class="hr-row w-50">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+		</section>
+		<!-- Fearues Section (End) --> 
+
+
+		<!-- Services Section (Start) -->
+		<section class="services-section" id="services-section">
+			<br>
+			<div class="container services-section-container">
+
+				<!-- Services Title (Start) -->
+				<br>
+				<div class="services-section-title container" data-aos="fade-up">
+					<h1 class="display-4">Our Services</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+				<br>
+				<!-- Services Title (End) -->
+
+				<!-- Cards Container (End) -->
+				<div class="container-fluid">
+					<br>
+					<!-- Card Row (Start) -->
+					<div class="row">
+						
+						<div class="col-lg-4 col-md-4 col-sm-12">
+							<br>
+							<div class="card border-0 shadow" data-aos="fade-right">
+								<div class="card-body bg-light">
+									<h2>Web<br>Development</h2>
+								</div>
+								<img src="css\images\services\services (2).jpg" class="img-fluid">
+								<div class="card-body bg-light">
+									<label>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</label>
+									<button class="btn service-card-button">
+										Learn more
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-sm-12">
+							<br>
+							<div class="card border-0 shadow" data-aos="fade-up">
+								<div class="card-body bg-light">
+									<h2>Machine<br>Learning & AI</h2>
+								</div>
+								<img src="css\images\services\services (1).jpg" class="img-fluid">
+								<div class="card-body bg-light">
+									<label>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</label>
+									<button class="btn service-card-button">
+										Learn more
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-sm-12">
+							<br>
+							<div class="card border-0 shadow" data-aos="fade-left">
+								<div class="card-body bg-light">
+									<h2>Software<br>Development</h2>
+								</div>
+								<img src="css\images\services\services (3).jpg" class="img-fluid">
+								<div class="card-body bg-light">
+									
+									<label>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</label>
+									<button class="btn service-card-button">
+										Learn more
+									</button>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<!-- Card Row (End) -->
+					<br>
+				</div>
+				<!-- Cards Container (End) -->
+
+			</div>
+			<br>
+		</section>
+		<!-- Services Section (End) -->
+
+		<!-- Portfolio Section (Start) -->
+		<section class="portfolio-section bg-warning" id="portfolio-section">
+			<br>
+			<div class="container portfolio-section-container">
+
+				<!-- Portfolio Title (Start) -->
+				<br>
+				<div class="portfolio-section-title container" data-aos="fade-up">
+					<h1 class="display-4">Our Portfolio</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+				<br>
+				<!-- Portfolio Title (End) -->
+
+				<!-- Business Clients (Start) -->
+				<div class="container p-5 business-brands shadow" align="center">
+					<div class="container" data-aos="zoom-in">
+						<hr class="bg-white w-50">
+						<h1 class="text-white">Top Business Clients</h1>
+						<hr class="bg-white w-50">
+					</div>
+					<br>
+					<div class="row">
+						<div class="container col-lg-2 col-sm-4 col-sm-6">
+							<img src="css\images\portfolio\partner1.png" class="my-2" data-aos="zoom-in">
+						</div>
+						<div class="container col-lg-2 col-sm-4 col-sm-6">
+							<img src="css\images\portfolio\partner2.png" class="my-2" data-aos="zoom-in">
+						</div>
+						<div class="container col-lg-2 col-sm-4 col-sm-6">
+							<img src="css\images\portfolio\partner3.png" class="my-2" data-aos="zoom-in">
+						</div>
+						<div class="container col-lg-2 col-sm-4 col-sm-6">
+							<img src="css\images\portfolio\partner4.png" class="my-2" data-aos="zoom-in">
+						</div> 
+						<div class="container col-lg-2 col-sm-4 col-sm-6">
+							<img src="css\images\portfolio\partner5.png" class="my-2" data-aos="zoom-in">
+						</div>
+					</div>
+				</div>
+				<!-- Business Clients (End) -->
+
+				<!-- Counter Cards (Start) -->
+				<div class="container py-5" align="center">
+					<br>
+					<div class="row">
+						<!-- First Card (Start) -->
+						<div class="col-lg-4 col-md-4 col-sm-6 p-3">
+							<br>
+							<div class="card shadow border-0 count-card" data-aos="fade-up">
+								<div class="card-body p-3">
+									<div class="card border-0 shadow count-img-card">
+										<img src="css\images\icons\case.svg" class="count-card-img">
+									</div>
+									<h1 class="display-4 mt-2">
+										<label class="counter d-inline-block">99</label>
+										<label class="d-inline-block">+</label>
+									</h1>
+									<h3>Business<br>Clients</h3>
+								</div>
+							</div>
+							<br>
+						</div>
+						<!-- First Card (End) -->
+
+						<!-- Second Card (Start) -->
+						<div class="col-lg-4 col-md-4 col-sm-6 p-3">
+							<br>
+							<div class="card shadow border-0 count-card" data-aos="fade-up">
+								<div class="card-body">
+									<div class="card border-0 shadow count-img-card">
+										<img src="css\images\icons\happy.svg" class="count-card-img">
+									</div>
+									<h1 class="display-4 mt-2">
+										<label class="counter d-inline-block">100</label>
+										<label class="d-inline-block">%</label>
+									</h1>
+									<h3>Customer<br>Satisfacation</h3>
+								</div>
+							</div>
+							<br>
+						</div>
+						<!-- Second Card (End) -->
+
+						<!-- Third Card (End) -->
+						<div class="col-lg-4 col-md-4 col-sm-6 p-3">
+							<br>
+							<div class="card shadow border-0 count-card" data-aos="fade-up">
+								<div class="card-body p-3">
+									<div class="card border-0 shadow count-img-card">
+										<img src="css\images\icons\developer.svg" class="count-card-img">
+									</div>
+									<h1 class="display-4 mt-2">
+										<label class="counter d-inline-block">99</label>
+										<label class="d-inline-block">+</label>
+									</h1>
+									<h3>Certified<br>Developers</h3>
+								</div>
+							</div>
+							<br>
+						</div>
+						<!-- Third Card (End) -->
+					</div>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+				</div>
+				<!-- Counter Cards (End) -->
+
+				<!-- Team (Start) -->
+				<div class="container" align="center">
+					<br>
+					<div class="container">
+						<h1>Meet Our Team</h1>
+						<hr class="hr-row w-25">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-12 p-3">
+							<div class="card shadow border-0" data-aos="fade-up">
+								<img src="css\images\team\team-1.jpg" class="img-fluid">
+								<div class="card-body bg-light">
+									<h5 class="font-weight-bold">Walter White</h5>
+									<label>Founder and CEO</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12 p-3">
+							<div class="card shadow border-0" data-aos="fade-up">
+								<img src="css\images\team\team-2.jpg" class="img-fluid">
+								<div class="card-body bg-light">
+									<h5 class="font-weight-bold">Sarah Jhonson</h5>
+									<label>Product Manager</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12 p-3">
+							<div class="card shadow border-0" data-aos="fade-up">
+								<img src="css\images\team\team-3.jpg" class="img-fluid">
+								<div class="card-body bg-light">
+									<h5 class="font-weight-bold">William Anderson</h5>
+									<label>Senior Developer</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12 p-3">
+							<div class="card shadow border-0" data-aos="fade-up">
+								<img src="css\images\team\team-4.jpg" class="img-fluid">
+								<div class="card-body bg-light">
+									<h5 class="font-weight-bold">Amanda Jepson</h5>
+									<label>Accountant</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<br>
+		</section>
+		<!-- Portfolio Section (End) -->
+
+		<!-- Products Section (Start) -->
+		<section class="product-section" id="product-section">
+			<br>
+			<div class="container product-section-container">
+				
+				<!-- Product Title (Start) -->
+				<br>
+				<div class="product-section-title container" data-aos="fade-up">
+					<h1 class="display-4">Products</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+				<br>
+				<!-- Product Title (End) -->
+
+				<!-- Product Cards (Start) -->
+				<div class="container-fluid">
+					<div class="row shadow product-row">
+						<div class="col-lg-6 col-md-6 col-sm-12 p-0">
+							<!-- First Card (Start) -->
+							<div class="product-card-01">
+								<div class="card-body" data-aos="fade-up">
+									<br>
+									<h3 class="product-card-01-title text-white">Product 1</h3>
+									<label class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</label>
+								</div>
+							</div>
+							<!-- First Card (End) -->
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 p-0">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-6 p-0">
+										<!-- Second Card (Start) -->
+										<div class="product-card-02">
+											<div class="card-body" data-aos="fade-up">
+												<br>
+												<h3 class="product-card-02-title text-white">Product 2</h3>
+												<label class="text-white">Lorem ipsum dolor sit amet.</label>
+											</div>
+										</div>
+										<!-- Second Card (End) -->
+									</div>
+									<div class="col-6 p-0">
+										<!-- Third Card (Start) -->
+										<div class="product-card-03">
+											<div class="card-body" data-aos="fade-up">
+												<br>
+												<h3 class="product-card-03-title text-white">Product 3</h3>
+												<label class="text-white">Lorem ipsum dolor sit amet.</label>
+											</div>
+										</div>
+										<!-- Third Card (End) -->
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12 p-0">
+										<!-- Fourth Card (Start) -->
+										<div class="product-card-04">
+											<div class="card-body" data-aos="fade-up">
+												<br>
+												<h3 class="product-card-04-title text-white">Product 4</h3>
+												<label class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
+											</div>
+										</div>
+										<!-- Fourth Card (End) -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<br>
+				</div>
+				<!-- Product Cards (End) -->
+
+				<!-- Product Article (Start) -->
+				<div class="container-fluid">
+					<br>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="container" data-aos="fade-right">
+								<br>
+								<img src="css\images\products\img1.jpg" class="img-fluid shadow">
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="container" data-aos="fade-left">
+								<br>
+								<h3>Inovation Technology</h3>
+								<hr class="hr-row w-50">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur.</p>
+								<a href="#" class="btn btn-light border-0 shadow product-section-button">Learn more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Product Article (End) -->
+
+			</div>
+			<br>
+		</section>
+		<!-- Products Section (End) -->
+
+		<!-- Contact us Section (Start) -->
+		<section class="contact-section bg-warning" id="contact-section">
+			<br>
+			<div class="container contact-section-container">
+
+				<!-- Contact Title (Start) -->
+				<br>
+				<div class="contact-section-title container" data-aos="fade-up">
+					<h1 class="display-4">Contact us</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+				<br>
+				<!-- Contact Title (End) -->
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-6 col-md-12 col-sm-12">
+							<!-- Google Maps (Start) -->
+							<div class="container" data-aos="fade-right">
+								<br>
+								<div class="container">
+									<h2>Office Location</h2>
+									<hr class="hr-row w-50">
+								</div>
+								<br>
+								<div class="container">
+									<iframe class="maps shadow bg-white" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15282332.38735586!2d73.70500838543431!3d20.74924652185732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1602215582906!5m2!1sen!2sin" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+								</div>
+								<div class="container">
+									<div class="card bg-white shadow">
+										<div class="card-body">
+											<label>Address : Example Street, Delhi-465431, India </label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Google Maps (End) -->
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-12">
+
+							<!-- Contact Form (Start) -->
+							<div class="container" data-aos="fade-left">
+								<br>
+								<div class="container">
+									<h2>Send us Message</h2>
+									<hr class="hr-row w-50">
+								</div>
+								<br>
+								<form class="form-group shadow card" onsubmit="return validateForm()" >
+									<div class="card-body">
+										<label class="text-dark font-weight-bold mb-3">Fill the form to send us message</label>
+										<br>
+										<div class="input-group-prepend">
+											<span class="input-group-text text-input font-weight-bold"><img src="css\images\icons\person.svg"></span>
+											<input type="text" name="name" class="input-group-text w-100 text-input text-left" placeholder="Enter your name">
+										</div>
+										<br>
+										<div class="input-group-prepend">
+											<span class="input-group-text text-input font-weight-bold"><img src="css\images\icons\at.svg"></span>
+											<input type="email" name="email" class="input-group-text w-100 text-input text-left" placeholder="Enter your email">
+										</div>
+										<br>
+										<div class="input-group-prepend">
+											<span class="input-group-text text-input font-weight-bold"><img src="css\images\icons\phone.svg"></span>
+											<input type="phone" name="phone" class="input-group-text w-100 text-input text-left" placeholder="Enter your phone">
+										</div>
+										<br>
+										<div class="input-group-prepend">
+											<span class="input-group-text text-input font-weight-bold"><img src="css\images\icons\message.svg"></span>
+											<textarea placeholder="Enter Message" class="input-group-text w-100 text-input text-left" rows="3"></textarea>
+										</div>
+										<br>
+										<div class="container">
+											<div class="form-check-inline">
+												<input type="checkbox" name="check" class="custom-checkbox mb-2"> 
+												<label class="font-weight-bold text-dark ml-1">I accept terms</label><a href="#" class="nav-link mb-2">View</a>
+											</div>
+											<button class="btn btn-lg shadow font-weight-bold submit-button shadow float-right" type="submit">Submit</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<!-- Contact Form (End) -->
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<br>
+		</section>
+		<!-- Contact us Section (End) -->
+
+		<!-- About Section (Start) -->
+		<section class="about-section" id="about-section">
+			<br>
+			<div class="container about-section-container">
+				
+				<!-- About Title (Start) -->
+				<br>
+				<div class="about-section-title container" data-aos="fade-up">
+					<h1 class="display-4">About</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+				<br>
+				<!-- About Title (End) -->
+
+				<!-- About Information (Start) --> 
+				<div class="container" align="center">
+					<br>
+					<div class="row">
+						<div class="col-lg-6 col-md-12 col-sm-12 p-3">
+							<div class="container" data-aos="fade-right">
+								<img src="css\images\about\img1.jpg" class="img-fluid shadow">
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-12 p-3" align="left">
+							<div class="container" data-aos="fade-left">
+								<h2>Who are we ?</h2>
+								<hr class="hr-row w-50">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat, Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+								<button class="btn bg-white about-section-button">learn more</button>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+				<!-- About Information (End) -->
+
+			</div>
+			<br>
+		</section>
+		<!-- About Section (End) -->
+
+		<!-- Footer (Start) --->
+		<footer>
+			<br>
+			<div class="container-fluid">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="container">
+								<br>
+								<br>
+								<h4 class="logo-l1">Example</h4>
+								<h4 class="logo-l2">Organization</h4>
+								<p class="text-light">Building theFuture<br>of World</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="container">
+								<br>
+								<h4 class="text-light">Services</h4>
+								<hr class="hr-row bg-success w-50">
+								<ul>
+									<li class=" py-1"><a href="#" class="card-link text-light">Web Development</a></li>
+									<li class=" py-1"><a href="#" class="card-link text-light">Machine Learning</a></li>
+									<li class=" py-1"><a href="#" class="card-link text-light">Software Development</a></li>
+									<li class=" py-1"><a href="#" class="card-link text-light">Other Services</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="container">
+								<br>
+								<h4 class="text-light">Products</h4>
+								<hr class="hr-row bg-success w-50">
+								<ul>
+									<li class=" py-1"><a href="#" class="card-link text-light">First Product</a></li>
+									<li class=" py-1"><a href="#" class="card-link text-light">Second Product</a></li>
+									<li class=" py-1"><a href="#" class="card-link text-light">Third Product</a></li>
+									<li class=" py-1"><a href="#" class="card-link text-light">Fourth Product</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="container">
+								<br>
+								<h4 class="text-light">Join us</h4>
+								<hr class="hr-row bg-success w-50">
+								<div class="form-group">
+									<p class="text-light">Get newsletters and updates</p>
+									<div class="input-group-append my-3">
+										<input type="email" name="email" placeholder="Enter Email" class="input-group-text text-input text-left">
+										<button class="btn button footer-subscribe-button text-input font-weight-bold">Subscribe</button>
+									</div>
+							
+									<a href="https://in.pinterest.com/coderlionpin/_created/"><img src="https://img.icons8.com/fluent/40/000000/pinterest.png" alt="pintresr.jpg"/></a>
+
+									<a href="https://www.facebook.com/labhansh.satpute.5"><img src="https://img.icons8.com/fluent/40/000000/facebook-new.png" alt="facebook.jpg"/></a>
+
+									<a href="https://twitter.com/LabhanshSatpute"><img src="https://img.icons8.com/fluent/40/000000/twitter.png" alt="twitter.jpg"/></a>
+
+									<a href="https://www.linkedin.com/in/labhansh-satpute-0060911a0/"><img src="https://img.icons8.com/fluent/40/000000/linkedin.png" alt="linkedin.jpg"/></a>
+
+									<a href="https://www.instagram.com/labhanshsatpute/?hl=en"><img src="https://img.icons8.com/fluent/40/000000/instagram-new.png" alt="instagram.jpg"/></a>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container" align="center">
+					<hr class="bg-dark">
+					<label class="text-light mt-2">Copyrights @ExampleOrginazation 2020-2030</label><br>
+					<label class="text-light">Designed by <a href="#" class="text-light card-link">Labhansh Satpute</a></label>
+					<hr class="bg-dark">
+				</div>
+				
+			</div>
+			<br>
+		</footer>
+		<!-- Footer (Start) --->
+
+	</header>
+	<!-- Background Header (End) -->
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+	<!-- AOS Script -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			offset: 270,
+			duration: 600
+		});
+	</script>
+
+</body>
+</html>

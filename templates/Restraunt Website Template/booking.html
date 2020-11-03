@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!----- Designed and created by labhansh Satpute ----->
+	<!----- Visit : www.coderlion.blogspot.com ----->
+
+	<!----- Meta tags ----->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!----- Google Fonts CDN ----->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap" rel="stylesheet">
+
+    <!---- AOS CDN ----->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!----- Bootsrap CDN ----->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+
+	<!--- Bootstrap (Offline) --->
+	<link rel="stylesheet" type="text/css" href="bootstrap\css\bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap\js\bootstrap.min.js">
+	</script>
+
+	<!----- Stylesheets ----->
+	<link rel="stylesheet" type="text/css" href="css\stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css\animate.css">
+
+	<!----- Javascripts ----->
+	<script type="text/javascript" src="js/formvalidation.js"></script>
+
+	<title>Resto Restaurant</title>
+</head>
+<body style="background-color: black;">
+
+	<!----- Header body (Start) ----->
+	<header class="body overflow-hidden" id="body">
+		<br>
+
+		<!-- Book Action (Start) -->
+		<section class="book-action" id="book-action">
+			<br>
+			<div class="container">
+
+				<!-- Page Title (Start) -->
+				<br>
+				<div class="container bg-dark p-3 reservation-title animated fadeInLeft"  data-aos="fade-right">
+					<h1 class="text-warning">Reservation</h1>
+					<label class="text-warning">Book a table according to you</label>
+				</div>
+				<br>
+				<!-- Page Title (End) -->
+
+				<!-- Booking Form (Start) -->
+				<div class="form-group px-lg-5 px-md-3 px-sm-0 animated fadeInUp">
+					<form class="container px-lg-5 px-md-3 px-sm-1" onsubmit="return validation()" action="#">
+						<br>
+						<!-- Username Input (Start) -->
+						<label class="text-warning">Your Name</label>
+						<input type="text" name="name" autocomplete="off" id="username" class="input-group-text border-warning w-100 book-text text-left text-warning" placeholder="Enter your name">
+						<lable class="text-white" id="usernameerror"></lable>
+						<!-- USername Input (End) -->
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<br>
+								<!-- Mobile Input (Start) -->
+								<label class="text-warning">Your Mobile Number</label>
+								<div class="input-group-append">
+									<input type="text" name="mobile" id="mobile" class="input-group-text border-warning w-100 book-text text-left text-warning" placeholder="Enter your mobile number" autocomplete="off">
+									<a href="#" class="btn bg-warning button font-weight-bold">Verify</a>
+								</div>
+								<lable class="text-white" id="mobileerror"></lable>
+								<!-- Mobile Input (End) -->
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<br>
+								<!-- Email Input (Start) -->
+								<label class="text-warning">Your Email</label>
+								<div class="input-group-append">
+									<input type="text" name="phone" id="email" class="input-group-text border-warning w-100 book-text text-left text-warning" placeholder="Enter your email" autocomplete="off">
+									<a href="#" class="btn bg-warning button font-weight-bold">Verify</a>
+								</div>
+								<lable class="text-white" id="emailerror"></lable>
+								<!-- Email Input (End) -->
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-6">
+								<!-- People Select (Start) -->
+								<label class="text-warning">People</label><br>
+								<select class="custom-select border-warning  book-text text-warning" id="people">
+									<option>- Select -</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+								</select>
+								<!-- People Select (End) -->
+							</div>
+							<div class="col-6">
+								<!-- Time Select (Start) -->
+								<label class="text-warning">Time</label><br>
+								<select class="custom-select border-warning book-text text-warning" id="time">
+									<option>- Select -</option>
+									<option>1 : PM</option>
+									<option>2 : PM</option>
+									<option>3 : PM</option>
+									<option>4 : PM</option>
+									<option>5 : PM</option>
+									<option>6 : PM</option>
+								</select>
+								<!-- Time Select (End) -->
+							</div>
+						</div>
+						<!-- Message Input (Start) -->
+						<br>
+						<label class="text-warning">Message (Optional)</label>
+						<textarea rows="3" class="input-group-text border-warning w-100 book-text text-left text-warning" placeholder="Enter your name" placeholder="Enter Message">	
+						</textarea>
+						<!-- Message Input (End) -->
+						<br>
+						<!-- Submit Button -->
+						<input type="submit" name="submit" value="Submit" class="btn btn-lg bg-warning button font-weight-bold">
+					</form>
+					<br>
+				</div>
+				<!-- Booking Form (End) -->
+			</div>
+			<br>
+		</section>
+		<!-- Book Action (End) -->
+
+	</header>
+	
+</body>
+</html>
