@@ -15,7 +15,9 @@ $(document).ready(function(){
 		});
 	});
 
-	$('#preloader').hide();
-	
 });
+
+function pageLoaded() {
+	$('#preloader').hide();
+}
 
