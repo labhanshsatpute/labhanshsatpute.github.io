@@ -64,6 +64,7 @@ section.home-section {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 .page-title {
 	margin-top: 15%;
